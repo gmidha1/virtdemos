@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name:
+  name: rhelvm
   namespace: argocd
 spec:
   destination:
-    namespace: guestbook
+    namespace: vm-gitops
     server: "https://kubernetes.default.svc"
   project: default
   source:
-    path: guestbook
-    repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
+    path: apps
+    repoURL: "https://github.com/gmidha1/virtdemos.git"
     targetRevision: master
   syncPolicy:
     syncOptions:
