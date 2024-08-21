@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: rhelvm
-  namespace: argocd
+  namespace: openshift-gitops
 spec:
   destination:
     namespace: vm-gitops
@@ -11,7 +11,7 @@ spec:
   source:
     path: vms
     repoURL: "https://github.com/gmidha1/virtdemos.git"
-    targetRevision: master
+    targetRevision: main
   syncPolicy:
     syncOptions:
       - CreateNamespace=true

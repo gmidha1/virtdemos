@@ -6,3 +6,4 @@ namespace: openshift-gitops-operator
 resources:
 - subscription.yaml
 - og.yaml
+- crb.yaml

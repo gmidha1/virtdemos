@@ -4,6 +4,8 @@ oc create ns openshift-gitops-operator
 oc label namespace openshift-gitops-operator openshift.io/cluster-monitoring=true
 
 oc apply -k ./operators/openshift-gitops
+
+oc adm groups add-users cluster-admins admin
 #oc get pods -n openshift-gitops 
 
 ###Install OCP Virtualization Operator
