@@ -9,7 +9,7 @@ spec:
     server: "https://kubernetes.default.svc"
   project: default
   source:
-    path: vms
+    path: vms/rhel
     repoURL: "https://github.com/gmidha1/virtdemos.git"
     targetRevision: main
   syncPolicy:
