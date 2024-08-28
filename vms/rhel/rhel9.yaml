@@ -1,4 +1,4 @@
-piVersion: kubevirt.io/v1
+apiVersion: kubevirt.io/v1
 kind: VirtualMachine
 metadata:
   name: rhel-9-amaranth-mite-44
