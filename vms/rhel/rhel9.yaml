@@ -2,7 +2,7 @@ apiVersion: kubevirt.io/v1
 kind: VirtualMachine
 metadata:
   name: rhel-9-amaranth-mite-44
-  namespace: default
+  namespace: vm-gitops
 spec:
   dataVolumeTemplates:
     - metadata:
